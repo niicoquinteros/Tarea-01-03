@@ -1,0 +1,94 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --one-star-color: #1D1E22;
+    --primary-background-color: #FAFBFF;
+    --title-color: #181818;
+    --text-color: rgb(47, 28, 106);
+    --font: "DM Sans", sans-serif;
+    --stars-color: #02AF90;
+    --flecha-color: #6A3EE7;
+}
+
+section{
+    font-family: var(--font);
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+article .titulo{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+article{
+    background-color: var(--primary-background-color);
+    width: 360px;
+    height: 270px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 30px;
+}
+
+article p{
+    color: var(--text-color);
+    line-height: 24px;
+    font-size: 16px;
+    height: 150px;
+}
+
+div{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.titulo .bi-star-fill{
+    font-size: 24px;
+}
+
+.stars{
+    color: var(--stars-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.stars a{
+    color: var(--flecha-color);
+    font-size: 20px;
+}
+
+.green-stars .bi-star-fill{
+    padding-right: 8px;
+}
+
+@media screen and (max-width: 1024px){
+
+
+    .section{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .btn-open-nav{
+        display: flex;
+        border: none;
+        background-color: transparent;
+        font-size: 24px;
+    }
+}
